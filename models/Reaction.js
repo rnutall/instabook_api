@@ -10,17 +10,14 @@ const reactionsSchema = new Schema(
       type: String,
       required: true,
       maxlength: 280, 
-      default: 'Unnamed reactions',
     },
     userName: {
       type: String,
-      required: true,
-      trim: true,
+      required: true
     },
     createdAt: {
       type: Date,
       default: Date.now,
-      getters: true,
     },
   },
   {

@@ -1,24 +1,37 @@
 const router = require('express').Router();
 const {
-  getusers,
-  getSingleusers,
-  createusers,
-  deleteusers,
-  addThoughts,
-    removeThoughts
-} = require('../../controllers/usersController');
+  getUser,
+  createUser,
+  getSingletUser,
+   deleteuser,
+   
+} = require('../../controllers/user');
 
 // /api/users
-router.route('/').get(getusers).post(createusers);
+router.route('/').get(getUser).post(createUser);
 
-// /api/users/:usersId
-router.route('/:usersId').get(getSingleusers).delete(deleteusers);
+// // /api/users/:alluser
+ const {
+   getAllUsers,
+ createAllUsers,
+} = require('../../controllers/user');
 
-// /api/users/:usersId/thoughts
-router.route('/:usersId/thoughts').post(addthoughts);
+ router.route('/:allUsers').get(getAllUsers).post(createAllUsers);
 
-// /api/users/:usersId/thoughts/:thoughtsId
-router.route('/:usersId/thoughts/:thoughtsId').delete(removethoughts);
+//api/users/:single User
+const {
+  getSingleUser,
+createSingleUser,
+} = require('../../controllers/user');
+
+
+ router.route('/:singleUser').get(singleUser).post(singleUser);
+
+ 
+
+// // /api/users/:usersId/thoughts/:thoughtsId
+// router.route('/:usersId/thoughts/:thoughtsId').delete(removeusers);
+// router.route('/:usersId/thoughts/:thoughtsId').update(removeusers);
 
 module.exports = router;
 
