@@ -19,6 +19,8 @@
   "homepage": "https://github.com/rnutall/instabook_api#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.2.2"
+    "mongoose": "^7.2.2",
+    "node": "^20.5.0",
+    "server.js": "^1.0.0"
   }
 }
