@@ -19,7 +19,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 ## Installation
 
-undefined
+MongoDB
 
 ## Usage
 
@@ -30,7 +30,7 @@ Mit
 
 ## Contributing
 
-undefined
+Rodney Nutall
 
 ## Tests
 
